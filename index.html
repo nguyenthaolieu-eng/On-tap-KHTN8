@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website ôn tập Khoa học tự nhiên lớp 8 - Kết nối tri thức với cuộc sống">
+  <title>Ôn tập KHTN lớp 8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="left-panel">
+    <h3>📰 Tin học tập</h3>
+    <div class="news-card"><b>📘 Ôn tập theo bài</b><p>Chọn chủ đề, luyện tập và xem giải thích đáp án.</p></div>
+    <div class="news-card"><b>🎯 Mục tiêu hôm nay</b><p>Hoàn thành ít nhất một chủ đề và một bài kiểm tra.</p></div>
+    <div class="news-card"><b>💡 Mẹo học tốt</b><p>Đọc câu hỏi cẩn thận, thử trả lời trước khi xem đáp án.</p></div>
+    <p class="small muted">Nội dung mẫu để giáo viên bổ sung, điều chỉnh theo kế hoạch dạy học.</p>
+  </aside>
+
+  <main class="main">
+    <header class="hero">
+      <div class="brand-icon">🎓</div>
+      <div class="hero-copy">
+        <h1>ÔN TẬP KHTN LỚP 8</h1>
+        <p>Kết nối tri thức với cuộc sống · Học chủ động – Luyện tự tin</p>
+      </div>
+      <button class="sound-button" id="themeToggle" title="Đổi giao diện">◐</button>
+    </header>
+
+    <section class="welcome">
+      <div><h2>Chào mừng em đến với góc ôn tập!</h2><p>Chọn một nội dung bên dưới để bắt đầu học tập.</p></div>
+      <div class="streak">⭐ <span id="streakText">Cố gắng mỗi ngày!</span></div>
+    </section>
+
+    <section class="dashboard" id="dashboard">
+      <article class="tile theory" data-view="theory"><div class="tile-icon">▤</div><h2>Ôn lý thuyết</h2><p>Tóm tắt kiến thức trọng tâm</p><button class="outline" data-view="theory">Bắt đầu</button></article>
+      <article class="tile physics" data-view="physics"><div class="tile-icon">ϟ</div><h2>Vật lí</h2><p>Trắc nghiệm theo chủ đề</p><button data-view="physics">Bắt đầu</button></article>
+      <article class="tile chemistry" data-view="chemistry"><div class="tile-icon">⚗</div><h2>Hóa học</h2><p>Trắc nghiệm theo chủ đề</p><button data-view="chemistry">Bắt đầu</button></article>
+      <article class="tile biology" data-view="biology"><div class="tile-icon">🧬</div><h2>Sinh học</h2><p>Trắc nghiệm theo chủ đề</p><button data-view="biology">Bắt đầu</button></article>
+      <article class="tile exam" data-view="exam"><div class="tile-icon">▣</div><h2>Thi thử tổng hợp</h2><p>15 câu · 20 phút</p><button data-view="exam">Bắt đầu thi</button></article>
+      <article class="tile progress" data-view="progress"><div class="tile-icon">⚡</div><h2>Tiến độ học tập</h2><p>Theo dõi kết quả luyện tập</p><button data-view="progress">Xem tiến độ</button></article>
+    </section>
+
+    <section class="workspace hidden" id="workspace">
+      <div class="workspace-head"><button class="back-button" id="backHome">← Trang chủ</button><div><h2 id="viewTitle">Ôn tập</h2><p id="viewDescription"></p></div></div>
+      <div id="viewContent"></div>
+    </section>
+    <footer>© 2026 · Website ôn tập KHTN lớp 8 · Dành cho học sinh THCS</footer>
+  </main>
+
+  <aside class="right-panel">
+    <h3>📈 Tiến độ học tập</h3>
+    <div id="sideProgress"></div>
+    <div class="stats">
+      <p><b>Tổng lượt làm:</b> <span id="totalAttempts">0</span></p>
+      <p><b>Điểm cao nhất:</b> <span id="bestScore">0</span></p>
+      <p><b>Hoàn thành:</b> <span id="completedTopics">0</span> chủ đề</p>
+    </div>
+    <div class="assistant-box"><b>🤖 Trợ lý học tập</b><p>Hãy chọn chủ đề, làm bài rồi xem phần giải thích để củng cố kiến thức nhé!</p></div>
+    <button class="reset-button" id="resetProgress">Xóa tiến độ trên thiết bị này</button>
+  </aside>
+  <script src="app.js"></script>
+</body>
+</html>
